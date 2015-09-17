@@ -31,5 +31,16 @@ nlevels(gapminder$continent) #tells you how many levels there are.
 unclass(gapminder$continent)
 ```
 
+```{r}
+library(ggplot2)
+p <- ggplot(subset(gapminder, continent != "Oceania"),
+            aes(x=gdpPercap, y=lifeExp))
+p <- p + scale_x_log10()
+p + geom_point()
+p + geom_point(aes(color = continent))
+p + geom_point(alpha=(1/3), size=3) + geom_smooth(lwd=3, se=F)
+```
+
+
 
 
