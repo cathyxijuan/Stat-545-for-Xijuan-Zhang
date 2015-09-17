@@ -1,0 +1,35 @@
+---
+title: "lecture 05 Sep-17-15.R"
+output: html_document
+---
+
+
+
+```{r}
+library(gapminder)
+str(gapminder)
+length(gapminder)
+head(rownames(gapminder))
+nrow(gapminder)
+summary(gapminder)
+head(gapminder$lifeExp)
+table(gapminder$year) 
+```
+
+```{r first-plot-base-R}
+plot(lifeExp ~ year , gapminder)
+plot(lifeExp ~ gdpPercap, gapminder)
+plot(gapminder$year, gapminder$lifeExp)
+hist(gapminder$lifeExp)
+barplot(table(gapminder$continent))
+```
+
+```{r}
+class(gapminder$continent)
+levels(gapminder$continent)
+nlevels(gapminder$continent) #tells you how many levels there are.
+unclass(gapminder$continent)
+```
+
+
+
