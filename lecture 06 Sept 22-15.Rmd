@@ -1,0 +1,19 @@
+---
+title: "lecture 06 Sept 22-15"
+author: "Cathy Xijuan Zhang"
+date: "September 22, 2015"
+output: html_document
+---
+
+
+```{r}
+library(ggplot2)
+```
+
+
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+
