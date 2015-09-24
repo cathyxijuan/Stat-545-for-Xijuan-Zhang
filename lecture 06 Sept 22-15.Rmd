@@ -8,6 +8,11 @@ output: html_document
 
 ```{r}
 library(ggplot2)
+library(gapminder)
+p <- ggplot(gapminder, aes(x = gdpPercap, y = lifeExp))
+p + geom_point() + scale_x_log10()
+p + geom_point() + scale_x_log10()
+p + geom_point(aes(color = continent)) + scale_x_log10()
 ```
 
 
