@@ -1,0 +1,29 @@
+---
+title: "Lecture 07 Sept 24-15"
+author: "Cathy Xijuan Zhang"
+date: "September 24, 2015"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+```{r setup, include= F}
+knitr::opts_chunk$set(echo =T)
+```
+
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+The name of the chunk is consistent with the figure name in the folder
+**The teacher want us to commit everything except the html; but she can if we want to **
+```{r pressure, echo=FALSE} 
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
